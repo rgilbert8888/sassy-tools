@@ -1,0 +1,28 @@
+$bg-color: #68A4C4;
+$color: white;
+$base-color: #021D2C;
+$p-color: #2A6889;
+$a-color: #FFFFFF;
+$base-size: 36px;
+
+body{
+	background-color: $bg-color;
+}
+
+@for $i from 1 through 6{
+	h#{$i}{
+		font-size: $base-size - ($i*2);
+		color: lighten($base-color,$i*5%);
+		margin: 0;
+		text-align: center;
+	}
+}
+
+p{
+	color: $p-color;
+}
+
+a{
+	color: $a-color;
+}
+
