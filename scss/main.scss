@@ -1,5 +1,15 @@
+
 @import 'partials/colors';
+@import 'partials/mixins';
+@import 'partials/buttons';
+@import 'partials/nav';
+@import 'partials/forms';
+
+
+*{box-sizing: border-box;}
 
 body{
-	background-color: $bg-color;
+	margin: 0 auto;
+	font: bold 1.4em arial, helvetica;
+
 }

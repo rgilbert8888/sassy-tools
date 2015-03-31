@@ -1,0 +1,104 @@
+
+
+$nav-color-start: #555555;
+$nav-color-end: #222222;
+$hover-color-start: #3fa4f0;
+$hover-color-end: #0f71ba;
+
+
+nav{
+  margin: 0;
+  width: auto;
+  height: 59px;
+  padding-bottom: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  position: relative;
+  font-family: Capriola, Helvetica, sans-serif;
+  @include gradient($nav-color-start, $nav-color-end);
+
+	ul{
+		width: 100%;
+
+		li{
+			display: block;
+			float: left;
+			padding: 24px 30px 20px 30px;
+
+			a{
+				display: block;
+  			color: #eeeeee;
+  			font-size: 15px;
+  			text-decoration: none;
+			}
+		}
+	}
+}
+
+.nav-down{
+	@extend nav;
+			li{
+				&:hover{
+					position: relative;
+						@include gradient(#3fa4f0, #0f71ba);
+						&:after{
+							position: absolute;
+							top: 100%;
+							left: 50%;
+							content: "";
+							display: block;
+							border-top: 10px solid $hover-color-end;
+							border-left: 10px solid transparent;
+							border-right: 10px solid transparent;
+							margin-left: -10px;
+							}
+						}
+					}
+				}
+		
+
+
+
+.nav-up{
+	@extend nav;
+	
+			li{
+				&:hover{
+					position: relative;
+						@include gradient($hover-color-start, $hover-color-end);
+						&:before{
+							position: absolute;
+							bottom: 0%;
+							left: 50%;
+							content: "";
+							display: block;
+							border-bottom: 10px solid $nav-color-end;
+							border-left: 10px solid transparent;
+							border-right: 10px solid transparent;
+							margin-left: -10px;
+							}
+						}
+					}
+				}
+			
+		
+	
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

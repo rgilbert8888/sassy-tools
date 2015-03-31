@@ -1,28 +1,34 @@
-$bg-color: #68A4C4;
+// $bg-color: #68A4C4;
 $color: white;
-$base-color: #021D2C;
-$p-color: #2A6889;
-$a-color: #FFFFFF;
+$base-color: #083E65;
+$p-color: #0f71ba;
+$a-color:  #0f71ba;
 $base-size: 36px;
-
-body{
-	background-color: $bg-color;
-}
+$shadow-color: rgba(0,0,0,0.5);
+$radius: 9px;
+$font-size: 10px;
+//add global margin and global font size 
+// then add specific stuff for just paragraphs
+// body{
+// 	background-color: $bg-color;
+// }
 
 @for $i from 1 through 6{
 	h#{$i}{
 		font-size: $base-size - ($i*2);
 		color: lighten($base-color,$i*5%);
-		margin: 0;
-		text-align: center;
+		margin: 3%;
 	}
 }
 
 p{
 	color: $p-color;
+	font-size: $font-size*2;
+	margin: 3%;
 }
 
 a{
 	color: $a-color;
+	font-size: $font-size + 5;
 }
 

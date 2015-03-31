@@ -1,0 +1,54 @@
+
+
+// button basic
+
+button {
+	margin: 20px 0 0 0;
+	padding: 12px 24px 12px 24px;
+	margin-top: 5px;
+	margin-bottom: 5px;   
+	display: inline-block;
+	color:white;
+	@include border-radius($radius);
+  border:none;
+	background-color: none;
+	overflow: visible;
+	position: relative;
+	@include box-shadow();
+
+}
+
+// all other buttons to be extended from the basic
+
+//submit
+.btn-submit{
+	@extend button;
+	@include gradient(#555555, #222222);
+
+
+}
+
+//no
+.btn-no{
+	@extend button;
+	@include gradient(rgba(255,48,25,1), rgba(147,19,2,1));
+}
+
+
+//yes
+.btn-yes{
+	@extend button;
+	@include gradient(rgba(75,198,102,1), rgba(0,87,0,1) );
+}
+
+//yes
+.btn-s{
+	@extend button;
+	@include gradient(rgb(255,48,25), rgba(207,4,4,1));
+}
+
+//no
+// .btn-no{
+// 	@extend %btn;
+// 	@include gradient(rgb(255,48,25), rgba(207,4,4,1));
+// }
