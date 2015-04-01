@@ -1,15 +1,24 @@
 
-@import 'partials/colors';
+@import 'partials/variables';
 @import 'partials/mixins';
 @import 'partials/buttons';
 @import 'partials/nav';
 @import 'partials/forms';
 
 
-*{box-sizing: border-box;}
+*{box-sizing: border-box;
+	@include border-radius($radius);
+	}
 
 body{
-	margin: 0 auto;
-	font: bold 1.4em arial, helvetica;
-
+	// margin: 0 auto;
+	font-family: $font-family;
 }
+.my-container{
+  padding-right: 15px;
+  padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	clear:both;
+}
+

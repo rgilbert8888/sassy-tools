@@ -15,7 +15,7 @@ button {
 	overflow: visible;
 	position: relative;
 	@include box-shadow();
-
+	@include gradient(rgba(214,214,214,1), rgba(146,146,155,1));
 }
 
 // all other buttons to be extended from the basic
@@ -24,8 +24,6 @@ button {
 .btn-submit{
 	@extend button;
 	@include gradient(#555555, #222222);
-
-
 }
 
 //no
@@ -41,11 +39,10 @@ button {
 	@include gradient(rgba(75,198,102,1), rgba(0,87,0,1) );
 }
 
-//yes
-.btn-s{
-	@extend button;
-	@include gradient(rgb(255,48,25), rgba(207,4,4,1));
-}
+// .btn-s{
+// 	@extend button;
+// 	@include gradient(rgb(255,48,25), rgba(207,4,4,1));
+// }
 
 //no
 // .btn-no{

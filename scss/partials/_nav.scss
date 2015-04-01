@@ -1,23 +1,21 @@
 
-
-$nav-color-start: #555555;
-$nav-color-end: #222222;
-$hover-color-start: #3fa4f0;
-$hover-color-end: #0f71ba;
-
-
 nav{
   margin: 0;
   width: auto;
   height: 59px;
   padding-bottom: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
   list-style: none;
   display: block;
   position: relative;
   font-family: Capriola, Helvetica, sans-serif;
   @include gradient($nav-color-start, $nav-color-end);
+  border-radius: 0;
+  
 
 	ul{
 		width: 100%;
@@ -26,6 +24,7 @@ nav{
 			display: block;
 			float: left;
 			padding: 24px 30px 20px 30px;
+			// border-radius: 0;
 
 			a{
 				display: block;
@@ -42,14 +41,14 @@ nav{
 			li{
 				&:hover{
 					position: relative;
-						@include gradient(#3fa4f0, #0f71ba);
+						@include gradient($p-color, $a-color);
 						&:after{
 							position: absolute;
 							top: 100%;
 							left: 50%;
 							content: "";
 							display: block;
-							border-top: 10px solid $hover-color-end;
+							border-top: 10px solid $p-color;
 							border-left: 10px solid transparent;
 							border-right: 10px solid transparent;
 							margin-left: -10px;
@@ -67,7 +66,7 @@ nav{
 			li{
 				&:hover{
 					position: relative;
-						@include gradient($hover-color-start, $hover-color-end);
+						@include gradient($p-color, $a-color);
 						&:before{
 							position: absolute;
 							bottom: 0%;
