@@ -1,14 +1,16 @@
 //mixins for vendor prefixes
 //border radius
 
-@mixin btn-color($btn-color){
-  background: $btn-color;
-  background-image: -webkit-linear-gradient(top, $btn-color, #000000);
-  background-image: -moz-linear-gradient(top, $btn-color, #000000);
-  background-image: -ms-linear-gradient(top, $btn-color, #000000);
-  background-image: -o-linear-gradient(top, $btn-color, #000000);
-  background-image: linear-gradient(to bottom, $btn-color, #000000);
-}
+
+
+// @mixin btn-color($btn-color){
+//   background: $btn-color;
+//   background-image: -webkit-linear-gradient(top, $btn-color, #000000);
+//   background-image: -moz-linear-gradient(top, $btn-color, #000000);
+//   background-image: -ms-linear-gradient(top, $btn-color, #000000);
+//   background-image: -o-linear-gradient(top, $btn-color, #000000);
+//   background-image: linear-gradient(to bottom, $btn-color, #000000);
+// }
 
 
 @mixin border-radius($radius) {
